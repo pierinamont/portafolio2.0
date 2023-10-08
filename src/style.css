@@ -42,8 +42,12 @@
   }
   
   .section .container .header {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: 1fr 50px;
     align-items: center;
   }
   
@@ -90,6 +94,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    margin-left: auto;
   }
 
 
