@@ -108,8 +108,12 @@
     gap: 16px;
   }
   
+   /*------------------ REVISAR -------------------*/
   .section:nth-child(2) .container {
     grid-row: 1 / 3;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: auto;
   }
 
   .section:nth-child(2) .container .header .img-icon {
