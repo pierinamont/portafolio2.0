@@ -11,11 +11,92 @@
   }
   
   * {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Manrope', sans-serif;
     font-size: 14px;
     color: var(--font-light-color);
   }
   
+  /* html, body {
+    width: 100%;
+  } */
+  
+  /* -------------- MENU ------------------- */
+  .menu-container {
+    display: flex;
+    justify-content: space-between;
+    width: 228px;
+    background-color: white;
+    border: 1px solid #E9E9E9;
+    padding: 4px;
+    border-radius: 100px;
+    height: 45px;
+    box-shadow: -1px 3px 15px 0px rgba(0,0,0,0.11);
+    align-items: center;
+  }
+  
+  .menu-container .button {
+    height: 108px;
+    width: 108px;
+    cursor: pointer;
+    background-color: #F8F8F8;
+    height: 45px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+  }
+  
+  .menu-container .button p {
+    color: #0179FE;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  /* -------------- ICONS ------------------- */
+  header {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header nav .icons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  header nav .icons .linkedin,
+  header nav .icons .resume,
+  header nav .icons .email {
+    height: 28px;
+    width: 28px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+  
+  header nav .icons .linkedin {
+      background-image: url("../assets/linkedin-logo.svg");
+  }
+  
+  header nav .icons .resume {
+      background-image: url("../assets/resume-icon.svg");
+  }
+  
+  header nav .icons .email {
+      background-image: url("../assets/email-icon.svg");
+  }
+
+
+
+/*--------------GRID--------------------*/
+
+
   section {
     display: grid;
     gap: 16px;
