@@ -16,11 +16,16 @@
     color: var(--font-light-color);
   }
   
-  /* html, body {
-    width: 100%;
-  } */
+ body {
+     margin: 0px;
+  } 
   
   /* -------------- MENU ------------------- */
+  header {
+    padding-bottom: 32px;
+    padding-top: 32px;
+  }
+
   .menu-container {
     display: flex;
     justify-content: space-between;
@@ -92,7 +97,9 @@
       background-image: url("../assets/email-icon.svg");
   }
 
-
+  header nav .icons .linkedin:hover {
+    color: blue
+  }
 
 /*--------------GRID--------------------*/
 
@@ -223,21 +230,25 @@
     background-image: url("../assets/codepen-logo.webp");
   }
   
+
+
+
 /*---------------  scroll cards ---------------------- */
 
 
 .content-cards-dribbble{
   display: flex;
-  gap: 8px;
+  gap: 12px;
   position: absolute;
   top: 5px;
   padding-right: 24px;
+  top: auto;
 }
 
 .card-container {
   background-color: grey;
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   border-radius: 16px;
   position: relative;
 }
@@ -272,10 +283,9 @@
 
 .card-button {
   background-color: #0179FE;
-  width: 182px;
-  height: 182px;
+  width: 180px;
+  height: 180px;
   border-radius: 16px;
-  padding: 24px;
 }
 
 
@@ -284,6 +294,8 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  padding: 16px;
+  height: -webkit-fill-available;
 }
 
 .card-button .info-container .button {
@@ -295,7 +307,8 @@
 .card-button .info-container p {
   text-align: center;
   color: white;
-  font-size: 20px;
+  font-size: 15px;
+  margin: 0px;
 }
 
 .card-button .info-container .button i{
