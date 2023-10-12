@@ -101,6 +101,17 @@
     color: blue
   }
 
+
+  .menu-bottom-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 24px;
+}
+
 /*--------------GRID--------------------*/
 
 
@@ -317,24 +328,8 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   
-    /*--------- responsive ---------*/
+    /*------------------ responsive cards ----------------*/
   
   
   @media (max-width: 1250px) {
@@ -369,3 +364,13 @@
     }
     
   }
+
+ /*------------------ margin menu ----------------*/  
+
+
+@media (max-width: 740px) {
+  header {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
