@@ -208,6 +208,7 @@
   }
   
    /*------------------ REVISAR -------------------*/
+   /*  */
   .section:nth-child(2) .container {
     grid-row: 1 / 3;
     position: relative;
@@ -228,6 +229,9 @@
   
   .section:nth-child(3) .container {
     grid-row: 1 / 3;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: auto;
   }
   
   
@@ -357,12 +361,14 @@
 }
 
 /* Track */
-.section:nth-child(2) ::-webkit-scrollbar-track {
+.section:nth-child(2) ::-webkit-scrollbar-track,
+.section:nth-child(3) ::-webkit-scrollbar-track {
   background: transparent;
 }
 
 /* Handle */
-.section:nth-child(2) ::-webkit-scrollbar-thumb {
+.section:nth-child(2) ::-webkit-scrollbar-thumb,
+.section:nth-child(3) ::-webkit-scrollbar-thumb {
   background: #888;
 }
 
