@@ -220,6 +220,15 @@
     background-image: url("../assets/dribbble-logo.webp");
   }
   
+  .section:nth-child(1) .container:nth-child(2) {
+    height: 230px;
+  }
+
+  #dribble-section .container:nth-child(2) {
+    height: 230px;
+  }
+
+
   /*------------------ codepen -------------------*/
   .section:nth-child(3) {
     display: grid;
@@ -245,7 +254,9 @@
     background-image: url("../assets/codepen-logo.webp");
   }
   
-
+ #codepen-section .container:nth-child(1) {
+    height: 230px;
+  }
 
 
 /*---------------  scroll cards ---------------------- */
@@ -410,6 +421,9 @@
       row-gap: 16px; /*-----revisar----------*/
     }
     
+    .section .container h1{
+      font-size: 18px;
+    }
   }
 
  /*------------------ margin menu ----------------*/  

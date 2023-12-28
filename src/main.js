@@ -6,16 +6,13 @@ let menuBottom = document.getElementById('menu-bottom');
 function changeMenus() {
   if (window.innerWidth <= 740) {
     menuTop.style.display = 'none';
-    menuBottom.style.display = 'flex';
+    menuBottom.style.display = '';
   } else {
-    menuTop.style.display = 'flex';
+    menuTop.style.display = '';
     menuBottom.style.display = 'none';
   }
 }
 
 // llamar función al cargar página 
 changeMenus();
-
-// cambiar tamaño de pantalla 
-window.addEventListener('resize', changeMenus);
 
