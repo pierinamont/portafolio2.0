@@ -286,14 +286,19 @@
   border: 3px solid var(--principal-color);
 }
 
-.card-container .image {
+/*---------------  dribble image ----------------- */
+
+
+/*---------------  dribble 01 ----------------- */
+.content-cards-dribbble .card-container:nth-child(1) .image {
   height: 100%;
   border-radius: 16px;
   background-color: lightgray;
-  background-size: cover;
+  background-size: 302%;
   background-repeat: no-repeat;
-  background-position: center;
-  background-image: url("https://pierinamont.github.io/hosted-assets/raul-angel-x8Ac6jee_3s-unsplash.jpg");
+  background-position-x: 26%;
+  background-image: url(../assets/dailyUI01.webp);
+  background-position-y: 7%;
 }
 
 .card-container .info-container {
