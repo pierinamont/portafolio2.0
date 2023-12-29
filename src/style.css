@@ -8,6 +8,7 @@
     --line-color: #E2E2E2;
     
     --principal-color: #0179FE;
+    --blue-hover: #0449df;
   }
   
   * {
@@ -122,6 +123,7 @@
     width: 100%;
     max-width: 1300px;
     grid-template-columns: 450px 1fr; /*------PRUEBA;-----*/
+    margin-bottom: 25px;
   }
   
   
@@ -217,7 +219,7 @@
   }
 
   .section:nth-child(2) .container .header .img-icon {
-    background-image: url("../assets/dribbble-logo.webp");
+    background-image: url("../assets/dribble.webp");
   }
   
   .section:nth-child(1) .container:nth-child(2) {
@@ -274,7 +276,6 @@
 }
 
 .card-container {
-  background-color: grey;
   width: 180px;
   height: 180px;
   border-radius: 16px;
@@ -282,9 +283,7 @@
   cursor: pointer;
 }
 
-.card-container:hover {
-  border: 3px solid var(--principal-color);
-}
+
 
 /*---------------  dribble image ----------------- */
 
@@ -305,12 +304,33 @@
   height: 100%;
   border-radius: 16px;
   background-color: lightgray;
-  background-size: 302%;
+  background-size: 149%;
   background-repeat: no-repeat;
-  background-position-x: 26%;
-  background-image: url(../assets/dailyUI01.webp);
-  background-position-y: 7%;
+  background-position-x: 92%;
+  background-image: url(../assets/dailyUI02.webp);
+  background-position-y: 71%;
 }
+/*---------------  dribble 03 ----------------- */
+.content-cards-dribbble .card-container:nth-child(3) .image {
+  height: 100%;
+  border-radius: 16px;
+  background-color: lightgray;
+  background-size: 218%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-image: url(../assets/dailyUI03.webp);
+  background-position-y: 0%;
+}
+
+.content-cards-dribbble .card-container:hover {
+  border: 3px solid var(--principal-color);
+  border-radius: 18px;
+}
+/* .content-cards-dribbble .card-container .image:hover {
+  background-size: 370%;
+  background-position-x: 51%;
+} */
+
 
 .card-container .info-container {
   background-color: var(--principal-color);
@@ -328,6 +348,10 @@
   padding-bottom: 4px;
 }
 
+.card-container .info-container:hover {
+  background-color: var(--blue-hover);
+}
+
 .card-container .info-container p {
   color: white;
   font-size: 14px;
@@ -340,8 +364,12 @@
   width: 180px;
   height: 180px;
   border-radius: 16px;
+  cursor: pointer;
 }
 
+.card-button:hover {
+  background-color: var(--blue-hover);
+}
 
 .card-button .info-container {
   display: flex;
@@ -365,9 +393,13 @@
   margin: 0px;
 }
 
-.card-button .info-container .button i{
-  font-size: 40px;
+.card-button .info-container .button .icon {
+  width: 40px;
+  height: 40px;
   color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../assets/arrow-tr-circle.png);
 }
 
 
@@ -379,6 +411,9 @@
   position: sticky;
   left: 0px;
 }
+
+
+
 
 /*------------------ scroll bar ----------------*/
 .section ::-webkit-scrollbar {
