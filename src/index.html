@@ -4,14 +4,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css">
   <link rel="stylesheet" href="/src/style.css">
+
   <title>Pierina Montalva</title>
 </head>
 
 <body>
+  
+ <!----------------------- header top --------------------------->
+  <header>
+    <nav>
+      <h3>Pierina Montalva</h3>
+      <!----------------- menu ------------------->
+      <div class="menu-container" id="'menu-top">
+  
+        <div class="button" id="inicio">
+          <p>Inicio</p>
+        </div>
+
+        <div class="button" id="proyectos">
+          <p>Recursos</p>
+        </div>
+  
+        <div class="button" id="proyectos">
+          <p>Proyectos</p>
+        </div>
+  
+      </div>
+      
+      <div class="icons">
+        <div class="linkedin"></div>
+        <div class="resume"></div>
+        <div class="email">
+        </div>
+      </div>
+    </nav>
+  
+  </header>
+
+ <!----------------------- header bottom --------------------------->
+
+  <div class="menu-bottom-section">
+    <div class="menu-container" id="menu-bottom">
+
+      <div class="button" id="inicio">
+        <p>Inicio</p>
+      </div>
+
+      <div class="button" id="proyectos">
+        <p>Recursos</p>
+      </div>
+
+      <div class="button" id="proyectos">
+        <p>Proyectos</p>
+      </div>
+
+    </div>
+ </div>
+
+
+
 
   <section>
 
@@ -27,25 +84,29 @@
           estudiar Administración y Marketing para poder ser parte todo el proceso de creación de productos. <br><br>
 
           Mientras estudiaba, llevé un curso sobre experiencia de usuario donde escuché por primera vez los términos de
-          <b>“Diseño UX”</b> y <b>“Front-end”</b>. Esto despertó en mí la curiosidad de conocer qué hay más allá de un producto
+          <b>“Diseño UX”</b> y <b>“Front-end”</b>. Esto despertó en mí la curiosidad de conocer qué hay más allá de un
+          producto
           digital, lo que me llevó a estudiar Desarrollo Front-end y Diseño UX/UI permitiéndome conocer distintas
           tecnologías y metodologías de trabajo como <b>Scrum</b> y <b>Design Thinking.</b> <br><br>
 
           Me interesa crear soluciones digitales que generen valor a los negocios y conecten con las personas, logrando
-          que estas puedan tener la mejor experiencias.</p>
+          que estas puedan tener la mejor experiencias.
+        </p>
       </div>
     </div>
 
     <!----------------------- dribble ------------------------->
 
-    <div class="section">
+    <div class="section" id="dribble-section">
       <!--------------- card with button ----------------->
       <div class="container">
         <div class="header" style="display: none;">
           <h1>tittle</h1>
         </div>
-        <div class="content">
-          <p class="description">Me especializo en diseñar interfaces con Figma, siguiendo las mejores prácticas. Mi amor por el minimalismo influye bastante en mis proyectos pero siempre me adapto mis diseños a cada desafío.</p>
+        <div class="content-dribbble">
+          <p class="description">Me especializo en diseñar interfaces con Figma, siguiendo las mejores prácticas. Mi
+            amor por el minimalismo influye bastante en mis proyectos pero siempre adapto mis diseños a cada desafío.
+          </p>
 
           <button class="projects-button">
             <p>Ver Diseños</p>
@@ -54,19 +115,61 @@
         </div>
       </div>
 
-      <!--------------- card with icon ----------------->
+      <!--------------- card with icon & scroll ----------------->
 
       <div class="container">
         <div class="header">
           <h1>Descubre mis shots en Dribbble</h1>
           <div class="img-icon"></div>
         </div>
-        <hr>
-        <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur.</p>
+        <!----<hr>----->
+        <!------------------------- scroll cards--------------------------->
+        <div class="content-cards-dribbble">
+          <!--------------- card img ----------------->
+          <div class="card-container" id="dribble01">
+            <a href="https://dribbble.com/shots/22728402-Daily-UI-Messages-view?utm_source=Clipboard_Shot&utm_campaign=pierinamontalva&utm_content=Daily%20UI%3A%20Messages%20view&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=pierinamontalva&utm_content=Daily%20UI%3A%20Messages%20view&utm_medium=Social_Share" target=”_blank” >
+             <div class="image"></div>
+            </a>
+            <div class="info-container">
+              <p>Messages view</p>
+            </div>
+          </div>
+
+          <!--------------- card img ----------------->
+          <div class="card-container" id="dribble02">
+            <a href="https://dribbble.com/shots/22690044-Daily-UI-Landing-Page?utm_source=Clipboard_Shot&utm_campaign=pierinamontalva&utm_content=Daily%20UI%3A%20Landing%20Page&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=pierinamontalva&utm_content=Daily%20UI%3A%20Landing%20Page&utm_medium=Social_Share" target=”_blank” >
+             <div class="image"></div>
+            </a>
+            <div class="info-container">
+              <p>Landing page</p>
+            </div>
+          </div>
+
+            <!--------------- card img ----------------->
+            <div class="card-container" id="dribble03">
+              <a href="https://dribbble.com/shots/22690852-Daily-UI-Leaderboard?utm_source=Clipboard_Shot&utm_campaign=pierinamontalva&utm_content=Daily%20UI%3A%20Leaderboard&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=pierinamontalva&utm_content=Daily%20UI%3A%20Leaderboard&utm_medium=Social_Share" target=”_blank” >
+                <div class="image"></div>
+               </a>
+              <div class="info-container">
+                <p>Leaderboard</p>
+              </div>
+            </div>
+  
+
+          <!--------------- card azul ----------------->
+          <a href="https://dribbble.com/pierinamontalva" target=”_blank” >
+            <div class="card-button">
+              <div class="info-container">
+                <p> Descubre más de mis shots de Dribble</p>
+                
+                
+                <div class="button">
+                  <i class="icon"></i>
+                </div>
+                
+              </div>
+            </div>
+          </a>
 
         </div>
       </div>
@@ -77,40 +180,86 @@
 
     <!----------------------- codepen ------------------------->
 
-    <div class="section">
-      <!--------------- card with icon ----------------->
+    <div class="section" id="codepen-section">
+      <!--------------- card with icon & scroll----------------->
 
       <div class="container">
         <div class="header">
           <h1>Codeo en mis tiempos libres</h1>
           <div class="img-icon"></div>
         </div>
-        <hr>
-        <div class="content">
-          <p>He realizado proyectos front-end en GitHub, pero lo que más hago últimamente en mis tiempos libres, es
-            maquetación web en Codepen, usando HTML, CSS (soy muy fan de CSS) y un poco de JavaScript.</p>
-
-        </div>
+        <!-- <hr> -->
+           <!------------------------- scroll cards--------------------------->
+           <div class="content-cards-codepen">
+            <!--------------- card img ----------------->
+            <div class="card-container" id="codepen01">
+              <a href="https://dribbble.com/pierinamontalva" target=”_blank” >
+               <div class="image"></div>
+              </a>
+              <div class="info-container">
+                <p>Rating Component</p>
+              </div>
+            </div>
+  
+            <!--------------- card img ----------------->
+            <div class="card-container" id="codepen02">
+              <a href="https://codepen.io/pierinamood/pen/RwMPxrN" target=”_blank” >
+                <div class="image"></div>
+               </a>
+              <div class="info-container">
+                <p>Stats Preview</p>
+              </div>
+            </div>
+  
+              <!--------------- card img ----------------->
+              <div class="card-container" id="codepen03">
+                <a href="https://codepen.io/pierinamood/pen/poxOpJj" target=”_blank” >
+                  <div class="image"></div>
+                 </a>
+                <div class="info-container">
+                  <p>Article Preview</p>
+                </div>
+              </div>
+    
+  
+            <!--------------- card img ----------------->
+            <a href="https://codepen.io/pierinamood/pens/public" target=”_blank” >
+              <div class="card-button">
+                <div class="info-container">
+                  <p> Descubre más de mis proyectos en Codepen</p>
+                  <div class="button">
+                    <i class="icon"></i>
+                  </div>
+    
+                </div>
+              </div>
+          </a>
+  
+          </div>
       </div>
 
       <!--------------- card with button ----------------->
-      <div class="container">
-        <div class="header" style="display: none;">
-          <h1>codepen</h1>
-        </div>
-        <div class="content">
-          <p class="description">He realizado proyectos front-end en <a href="https://github.com/pierinamont?tab=repositories" target="_blank">GitHub</a>, pero lo que más hago ultimamente en mis tiempos libres, es
-            maquetación web en <b>Codepen</b>, usando HTML, CSS (soy muy fan de CSS) y un poco de JavaScript.</p>
+      <a href="https://codepen.io/pierinamood/pens/public" target=”_blank” ></a>
+          <div class="container">
+            <div class="header" style="display: none;">
+              <h1>codepen</h1>
+            </div>
+            <div class="content-codepen">
+              <p class="description">He realizado proyectos front-end en <a
+                  href="https://github.com/pierinamont?tab=repositories" target="_blank">GitHub</a>, pero lo que más hago
+                ultimamente en mis tiempos libres, es
+                maquetación web en <b>Codepen</b>, usando HTML, CSS (soy muy fan de CSS) y un poco de JavaScript.</p>
 
-          <button class="projects-button">
-            <p>Ver Proyectos</p>
-            <i class="iconoir-arrow-tr"></i>
-          </button>
-        </div>
-      </div>
-
+              <button class="projects-button">
+                <p>Ver Proyectos</p>
+                <i class="iconoir-arrow-tr"></i>
+              </button>
+            </div>
+          </div>
+        </a>
   </section>
 
+  <script type="module" src="main.js"></script>
 </body>
 
 </html>
