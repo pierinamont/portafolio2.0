@@ -29,8 +29,6 @@
 
   .menu-container {
     display: flex;
-    justify-content: space-between;
-    width: 228px;
     background-color: white;
     border: 1px solid #E9E9E9;
     padding: 4px;
@@ -38,6 +36,9 @@
     height: 45px;
     box-shadow: -1px 3px 15px 0px rgba(0,0,0,0.11);
     align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+    width: 260px;
   }
   
   .menu-container .button {
@@ -102,15 +103,17 @@
     color: blue
   }
 
-
+/*-------------- MENU BOTTOM --------------------*/
   .menu-bottom-section {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    bottom: 0;
+    /* position: absolute; */
     margin-bottom: 24px;
+    position: fixed;
+    bottom: 0%;
+    z-index: 1;
 }
 
 /*--------------GRID--------------------*/
@@ -185,11 +188,18 @@
       color: var(--font-dark-color);
   }
 
-  .container .content-dribbble .projects-button i,
-  .container .content-codepen .projects-button i {
-    font-size: 16px;
+  .container .content-dribbble .projects-button .icon,
+  .container .content-codepen .projects-button .icon {
+    width: 16px;
+    height: 16px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../assets/arrow.png");
   }
   
+  
+
+
   /*--------- logod ---------*/
   .section .container .header .img-icon {
     width: 32px;
