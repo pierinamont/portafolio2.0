@@ -300,6 +300,17 @@
   background-image: url(../assets/dailyUI01.webp);
   background-position-y: 7%;
 }
+/*---------------  dribble 02 ----------------- */
+.content-cards-dribbble .card-container:nth-child(2) .image {
+  height: 100%;
+  border-radius: 16px;
+  background-color: lightgray;
+  background-size: 302%;
+  background-repeat: no-repeat;
+  background-position-x: 26%;
+  background-image: url(../assets/dailyUI01.webp);
+  background-position-y: 7%;
+}
 
 .card-container .info-container {
   background-color: var(--principal-color);
