@@ -105,15 +105,16 @@
 
 /*-------------- MENU BOTTOM --------------------*/
   .menu-bottom-section {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* position: absolute; */
     margin-bottom: 24px;
     position: fixed;
     bottom: 0%;
     z-index: 1;
+    left: 50%;
+    right: 50%;
 }
 
 /*--------------GRID--------------------*/
@@ -128,12 +129,11 @@
     grid-template-columns: 450px 1fr; /*------PRUEBA;-----*/
     margin-bottom: 25px;
   }
-  
-  
-  /* hr {
+
+  hr {
     border: 1px solid var(--line-color);
   }
-   */
+   
   
   section .container {
     background-color: var(--card-color);

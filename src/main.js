@@ -3,7 +3,7 @@ let menuTop = document.getElementById('menu-top');
 let menuBottom = document.getElementById('menu-bottom');
 
 
-// elementos de cards con botón /////////////////////////////////////
+// elementos de cards con botón ////////////////////////////////////
 
 //cards
 let dribbleContainer = document.getElementById('dribble-container');
@@ -15,26 +15,32 @@ let codepenBtn = document.getElementById('codepen-btn');
 
 // texto btn 
 let dribbleBtnText  = document.getElementById('dribble-btn-text');
-let codepenBtnText  = document.getElementById('dribble-btn-text');
+let codepenBtnText  = document.getElementById('codepen-btn-text');
 
 //texto 
 let dribbleDescription = document.getElementById('dribble-description');
 let codepenDescription = document.getElementById('codepen-description');
+
+// texto 
+let githubLink = document.getElementById('github-link')
+let codepentext = document.getElementById('codepen-text')
 
 //icon
 let dribbleIcon = document.getElementById('dribble-icon');
 let codepenIcon = document.getElementById('codepen-icon');
 
 
+
+
 // Función para cambiar de color a card cuando hay hover 
 
 //variable para cambiar estados de hover
-let hover = false;
+let dribbleHover = false;
 
 // hover
 dribbleBtn.addEventListener("mouseover", () => {
   // cambia variable a true
-  hover = true;
+  dribbleHover = true;
   // llama la función
   changeDribbleColor();
 });
@@ -42,7 +48,7 @@ dribbleBtn.addEventListener("mouseover", () => {
 // cursor sale del elemento
 dribbleBtn.addEventListener("mouseleave", () => {
   // cambia variable a false
-  hover = false;
+  dribbleHover = false;
   // llama la función
   changeDribbleColor();
   
@@ -51,7 +57,7 @@ dribbleBtn.addEventListener("mouseleave", () => {
 // función para cambiar colores en base al estado del hover
 function changeDribbleColor() {
   // si hover es true cambiar colores
-  if(hover === true) {
+  if(dribbleHover === true) {
     dribbleContainer.style.background="#0179FE";
     dribbleBtnText.style.color="#0179FE";
     dribbleBtn.style.background="#ffffff";
@@ -68,6 +74,64 @@ function changeDribbleColor() {
     dribbleIcon.removeAttribute('style');
   }
 }
+
+
+// Función para cambiar de color a card cuando hay hover 
+
+//variable para cambiar estados de hover
+let codepenHover = false;
+
+// hover
+codepenBtn.addEventListener("mouseover", () => {
+  // cambia variable a true
+  codepenHover = true;
+  // llama la función
+  changeCodepenColor();
+});
+
+// cursor sale del elemento
+codepenBtn.addEventListener("mouseleave", () => {
+  // cambia variable a false
+  codepenHover = false;
+  // llama la función
+  changeCodepenColor();
+});
+
+
+// función para cambiar colores en base al estado del hover
+function changeCodepenColor() {
+  // si hover es true cambiar colores
+  if(codepenHover === true) {
+    codepenContainer.style.background="#0179FE";
+    codepenBtnText.style.color="#0179FE";
+    codepenBtn.style.background= "#ffffff";
+    githubLink.style.color = "#ffffff";
+    codepentext.style.color = "#ffffff";
+    codepenBtn.style.boxShadow="0px 1px 12px 0px rgba(0, 0, 0, 0.20)";
+    codepenDescription.style.color= "#ffffff";
+    codepenIcon.style.backgroundImage= 'url(../assets/arrow-blue.png)';
+  } else {
+    // regresar a los estilos del principio
+    codepenContainer.removeAttribute('style');
+    codepenBtnText.removeAttribute('style');
+    codepenBtn.removeAttribute('style');
+    codepenBtn.removeAttribute('style');
+    codepenDescription.removeAttribute('style');
+    codepenIcon.removeAttribute('style');
+    githubLink.removeAttribute('style');
+    codepentext.removeAttribute('style');
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 // función para manejar la visibilidad de los menús
 // function changeMenus() {
