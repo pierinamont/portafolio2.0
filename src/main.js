@@ -246,7 +246,6 @@ function changeMenuIconsColor() {
 
 function changeMenus() {
   if (window.innerWidth <= 740) {
-    alert('hola')
     menuTop.style.display = 'none';
     menuBottom.style.display = '';
   } else {
