@@ -423,7 +423,7 @@
 }
 
 .card-button:hover {
-  background-color: var(--blue-hover);
+  box-shadow: 1px -1px 14px 1px rgba(1,121,254,0.75);
 }
 
 .card-button .info-container {
