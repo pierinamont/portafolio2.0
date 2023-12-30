@@ -1,6 +1,11 @@
-// guardamos elementos
+// Elementos de menú ////////////////////////////////////
 let menuTop = document.getElementById('menu-top');
 let menuBottom = document.getElementById('menu-bottom');
+
+// iconos del menu
+let linkedin = document.getElementById('linkedin');
+let resume = document.getElementById('resume');
+let email = document.getElementById('email');
 
 
 // elementos de cards con botón ////////////////////////////////////
@@ -36,6 +41,11 @@ let codepenIcon = document.getElementById('codepen-icon');
 
 //variable para cambiar estados de hover
 let dribbleHover = false;
+let codepenHover = false;
+let linkedinHover = false;
+let resumeHover = false;
+let emailHover = false;
+
 
 // hover
 dribbleBtn.addEventListener("mouseover", () => {
@@ -77,9 +87,6 @@ function changeDribbleColor() {
 
 
 // Función para cambiar de color a card cuando hay hover 
-
-//variable para cambiar estados de hover
-let codepenHover = false;
 
 // hover
 codepenBtn.addEventListener("mouseover", () => {
@@ -123,9 +130,111 @@ function changeCodepenColor() {
   }
 }
 
+// Función para cambiar de color iconos del menu 
+
+
+// linkedin
+
+linkedin.addEventListener("mouseover", () => {
+  // cambia variable a true
+  linkedinHover = true;
+  // llama la función
+  changeMenuIconsColor();
+});
+
+
+// cursor sale del elemento
+linkedin.addEventListener("mouseleave", () => {
+  // cambia variable a false
+  linkedinHover = false;
+  // llama la función
+  changeMenuIconsColor();
+  
+});
+
+// resume
+
+// cursor sale del elemento
+resume.addEventListener("mouseover", () => {
+  // cambia variable a true
+  resumeHover = true;
+  // llama la función
+  changeMenuIconsColor();
+});
+
+// cursor sale del elemento
+resume.addEventListener("mouseleave", () => {
+  // cambia variable a false
+  resumeHover = false;
+  // llama la función
+  changeMenuIconsColor();
+  
+});
+
+// email
+
+// cursor sale del elemento
+email.addEventListener("mouseover", () => {
+  // cambia variable a true
+  emailHover = true;
+  // llama la función
+  changeMenuIconsColor();
+});
+
+// cursor sale del elemento
+email.addEventListener("mouseleave", () => {
+  // cambia variable a false
+  emailHover = false;
+  // llama la función
+  changeMenuIconsColor();
+  
+});
+
+
+// función para cambiar color de iconos 
+function changeMenuIconsColor() {
+
+  // si hover es true cambiar colores
+
+  // linkedin
+  if(linkedinHover === true) {
+    linkedin.style.backgroundImage='url(../assets/linkedin-blue.svg)';
+
+  } else {
+    // regresar a los estilos del principio
+    linkedin.removeAttribute('style');
+   
+  }
+
+  // resume
+  if(resumeHover === true) {
+    resume.style.backgroundImage='url(../assets/resume-blue.svg)';
+
+  } else {
+    // regresar a los estilos del principio
+    resume.removeAttribute('style');
+   
+  }
+
+  // email
+
+  if(emailHover === true) {
+    email.style.backgroundImage='url(../assets/email-blue.svg)';
+
+  } else {
+    // regresar a los estilos del principio
+    email.removeAttribute('style');
+   
+  }
+
+}
 
 
 
+
+// let linkedinHover = false;
+// let resumeHover = false;
+// let emailHover = false;
 
 
 
@@ -134,15 +243,18 @@ function changeCodepenColor() {
 
 
 // función para manejar la visibilidad de los menús
-// function changeMenus() {
-//   if (window.innerWidth <= 740) {
-//     menuTop.style.display = 'none';
-//     menuBottom.style.display = '';
-//   } else {
-//     menuTop.style.display = '';
-//     menuBottom.style.display = 'none';
-//   }
-// }
 
-// llamar función al cargar página 
-// changeMenus();
+function changeMenus() {
+  if (window.innerWidth <= 740) {
+    alert('hola')
+    menuTop.style.display = 'none';
+    menuBottom.style.display = '';
+  } else {
+    menuTop.style.display = '';
+    menuBottom.style.display = 'none';
+  }
+}
+
+//llamar función al cargar página 
+changeMenus();
+window.addEventListener('resize', changeMenus);
