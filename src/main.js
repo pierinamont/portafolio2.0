@@ -2,6 +2,19 @@
 let menuTop = document.getElementById('menu-top');
 let menuBottom = document.getElementById('menu-bottom');
 
+let inicioBtn = document.getElementById('iniciobtn');
+let recursosBtn = document.getElementById('recursosbtn');
+let proyectosBtn = document.getElementById('proyectosbtn');
+
+let inicioDiv = document.getElementById('inicio');
+let recursosDiv = document.getElementById('recursos');
+let proyectosDiv = document.getElementById('proyectos');
+
+let inicioBtnText = document.getElementById("inicio-btn-text");
+let recursosBtnText = document.getElementById("recursos-btn-text");
+let proyectosBtnText = document.getElementById("proyectos-btn-text");
+
+
 // iconos del menu
 let linkedin = document.getElementById('linkedin');
 let resume = document.getElementById('resume');
@@ -70,6 +83,7 @@ function changeDribbleColor() {
   if(dribbleHover === true) {
     dribbleContainer.style.background="#0179FE";
     dribbleBtnText.style.color="#0179FE";
+    dribbleBtnText.style.fontWeight="600";
     dribbleBtn.style.background="#ffffff";
     dribbleBtn.style.boxShadow="0px 1px 12px 0px rgba(0, 0, 0, 0.20)";
     dribbleDescription.style.color= "#ffffff";
@@ -111,6 +125,7 @@ function changeCodepenColor() {
   if(codepenHover === true) {
     codepenContainer.style.background="#0179FE";
     codepenBtnText.style.color="#0179FE";
+    codepenBtnText.style.fontWeight="600";
     codepenBtn.style.background= "#ffffff";
     githubLink.style.color = "#ffffff";
     codepentext.style.color = "#ffffff";
@@ -230,18 +245,6 @@ function changeMenuIconsColor() {
 }
 
 
-
-
-// let linkedinHover = false;
-// let resumeHover = false;
-// let emailHover = false;
-
-
-
-
-
-
-
 // función para manejar la visibilidad de los menús
 
 function changeMenus() {
@@ -257,3 +260,51 @@ function changeMenus() {
 //llamar función al cargar página 
 changeMenus();
 window.addEventListener('resize', changeMenus);
+// Función para seleccionar menú ////////////////////////////////////
+
+// let MenuTopOptions= ["inicio", "recursos", "proyectos" ]
+
+function menuOptionSelected(e) {
+  
+  // guardar opción seleccionada
+  let optionSelected = e.currentTarget.getAttribute("href");
+  // alert(optionSelected)
+
+  // recorrer array de opciones
+  // for(let i = 0; i<MenuTopOptions.length; i++ ) {
+  //   alert(MenuTopOptions[i])
+  // }
+
+    //Colorear botón seleccionado
+    // Al presionar inicio
+    if(optionSelected === '#' + 'inicio') {
+      inicioDiv.style.backgroundColor="#0179FE";
+      inicioBtnText.style.color="ffffff"
+    } else {
+      inicioDiv.removeAttribute('style');
+      inicioBtnText.removeAttribute('style');
+    }
+    // Al presionar recursos
+    if(optionSelected === '#' + 'recursos') {
+      recursosDiv.style.backgroundColor="#0179FE";
+      recursosBtnText.style.color="ffffff"
+    } else {
+      recursosDiv.removeAttribute('style');
+      recursosBtnText.removeAttribute('style');
+    }
+    // Al presionar proyectos
+    if(optionSelected === '#' + 'proyectos') {
+      proyectosDiv.style.backgroundColor="#0179FE";
+      proyectosBtnText.style.color="ffffff"
+    } else {
+      proyectosDiv.removeAttribute('style');
+      proyectosBtnText.removeAttribute('style');
+    }
+}
+
+inicioBtn.addEventListener('click', menuOptionSelected)
+recursosBtn.addEventListener('click', menuOptionSelected)
+proyectosBtn.addEventListener('click', menuOptionSelected)
+
+
+

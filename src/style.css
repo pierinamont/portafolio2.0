@@ -38,7 +38,13 @@
     align-items: center;
     justify-content: space-between;
     gap: 4px;
-    width: 260px;
+    width: auto;
+  }
+
+  .menu-container #iniciobtn,
+  .menu-container #recursosbtn,
+  .menu-container #proyectosbtn {
+    text-decoration: none;
   }
   
   .menu-container .button {
@@ -161,7 +167,7 @@
  }
   
   .container .header h1 { 
-    font-size: 24px;
+    font-size: 20px;
     margin: 0px;
     font-weight: 500;
   }
@@ -173,7 +179,7 @@
   .projects-button {
     text-decoration: none;
   }
-  
+
   .container .content-dribbble .projects-button,
   .container .content-codepen .projects-button{
     display: flex;
@@ -409,10 +415,6 @@
   padding-bottom: 4px;
 }
 
-.card-container .info-container:hover {
-  background-color: var(--blue-hover);
-}
-
 .card-container .info-container p {
   color: white;
   font-size: 14px;
@@ -479,11 +481,13 @@
 /*------------------ scroll bar ----------------*/
 .section ::-webkit-scrollbar {
   /* width: 10px; */
-  height: 4px;
+  height: 8px;
   position: absolute;
+  cursor: pointer;
+  
 }
 
-/* Track */
+/* Track (bg)*/
 .section:nth-child(2) ::-webkit-scrollbar-track,
 .section:nth-child(3) ::-webkit-scrollbar-track {
   background: transparent;
@@ -492,7 +496,9 @@
 /* Handle */
 .section:nth-child(2) ::-webkit-scrollbar-thumb,
 .section:nth-child(3) ::-webkit-scrollbar-thumb {
-  background: transparent;
+  background: var(--line-color);
+  cursor: pointer;
+  border-radius: 30px;
 }
 
 /* Handle on hover */
@@ -546,4 +552,17 @@
     margin-left: 16px;
     margin-right: 16px;
   }
+
+  .container .header h1 {
+    font-size: 18px;
+  }
+
+  .content-cards-dribbble, .content-cards-codepen {
+    top: 95px;
+  }
+
+  #dribble-section .container:nth-child(2),
+  #codepen-section .container:nth-child(1)  {
+    height: 250px;
+}
 }
