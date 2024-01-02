@@ -43,7 +43,10 @@
 
   .menu-container #iniciobtn,
   .menu-container #recursosbtn,
-  .menu-container #proyectosbtn {
+  .menu-container #proyectosbtn,
+  .menu-container #iniciobtn2,
+  .menu-container #recursosbtn2,
+  .menu-container #proyectosbtn2 {
     text-decoration: none;
   }
   
@@ -51,7 +54,7 @@
     height: 108px;
     width: 108px;
     cursor: pointer;
-    background-color: #F8F8F8;
+    /* background-color: #F8F8F8; */
     height: 45px;
     border-radius: 100px;
     display: flex;

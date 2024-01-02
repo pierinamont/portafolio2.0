@@ -279,7 +279,7 @@ function menuOptionSelected(e) {
     // Al presionar inicio
     if(optionSelected === '#' + 'inicio') {
       inicioDiv.style.backgroundColor="#0179FE";
-      inicioBtnText.style.color="ffffff"
+      inicioBtnText.style.color="White"
     } else {
       inicioDiv.removeAttribute('style');
       inicioBtnText.removeAttribute('style');
@@ -287,7 +287,7 @@ function menuOptionSelected(e) {
     // Al presionar recursos
     if(optionSelected === '#' + 'recursos') {
       recursosDiv.style.backgroundColor="#0179FE";
-      recursosBtnText.style.color="ffffff"
+      recursosBtnText.style.color="White"
     } else {
       recursosDiv.removeAttribute('style');
       recursosBtnText.removeAttribute('style');
@@ -295,7 +295,7 @@ function menuOptionSelected(e) {
     // Al presionar proyectos
     if(optionSelected === '#' + 'proyectos') {
       proyectosDiv.style.backgroundColor="#0179FE";
-      proyectosBtnText.style.color="ffffff"
+      proyectosBtnText.style.color="White"
     } else {
       proyectosDiv.removeAttribute('style');
       proyectosBtnText.removeAttribute('style');
