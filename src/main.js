@@ -2,10 +2,8 @@
 let menuTop = document.getElementById('menu-top');
 let menuBottom = document.getElementById('menu-bottom');
 
-let inicioBtn = document.getElementById('iniciobtn');
-let recursosBtn = document.getElementById('recursosbtn');
-let proyectosBtn = document.getElementById('proyectosbtn');
 
+// menu top
 let inicioDiv = document.getElementById('inicio');
 let recursosDiv = document.getElementById('recursos');
 let proyectosDiv = document.getElementById('proyectos');
@@ -13,6 +11,24 @@ let proyectosDiv = document.getElementById('proyectos');
 let inicioBtnText = document.getElementById("inicio-btn-text");
 let recursosBtnText = document.getElementById("recursos-btn-text");
 let proyectosBtnText = document.getElementById("proyectos-btn-text");
+
+let inicioBtn = document.getElementById('iniciobtn');
+let recursosBtn = document.getElementById('recursosbtn');
+let proyectosBtn = document.getElementById('proyectosbtn');
+
+
+// menu bottom
+let inicioDiv2 = document.getElementById('inicio2');
+let recursosDiv2 = document.getElementById('recursos2');
+let proyectosDiv2 = document.getElementById('proyectos2');
+
+let inicioBtnText2 = document.getElementById("inicio-btn-text2");
+let recursosBtnText2 = document.getElementById("recursos-btn-text2");
+let proyectosBtnText2 = document.getElementById("proyectos-btn-text2");
+
+let inicioBtn2 = document.getElementById('iniciobtn2');
+let recursosBtn2 = document.getElementById('recursosbtn2');
+let proyectosBtn2 = document.getElementById('proyectosbtn2');
 
 
 // iconos del menu
@@ -145,10 +161,11 @@ function changeCodepenColor() {
   }
 }
 
-// Función para cambiar de color iconos del menu 
 
 
-// linkedin
+// Función para cambiar de color iconos del menu  
+
+// linkedin ////////////////////////////////////
 
 linkedin.addEventListener("mouseover", () => {
   // cambia variable a true
@@ -167,7 +184,7 @@ linkedin.addEventListener("mouseleave", () => {
   
 });
 
-// resume
+// resume ////////////////////////////////////
 
 // cursor sale del elemento
 resume.addEventListener("mouseover", () => {
@@ -186,7 +203,7 @@ resume.addEventListener("mouseleave", () => {
   
 });
 
-// email
+// email ////////////////////////////////////
 
 // cursor sale del elemento
 email.addEventListener("mouseover", () => {
@@ -231,7 +248,7 @@ function changeMenuIconsColor() {
    
   }
 
-  // email
+  // email 
 
   if(emailHover === true) {
     email.style.backgroundImage='url(../assets/email-blue.svg)';
@@ -260,51 +277,96 @@ function changeMenus() {
 //llamar función al cargar página 
 changeMenus();
 window.addEventListener('resize', changeMenus);
+
+
+
 // Función para seleccionar menú ////////////////////////////////////
 
-// let MenuTopOptions= ["inicio", "recursos", "proyectos" ]
 
 function menuOptionSelected(e) {
+
+  // let btnSelectedDefault = "inicio"
   
   // guardar opción seleccionada
   let optionSelected = e.currentTarget.getAttribute("href");
-  // alert(optionSelected)
-
-  // recorrer array de opciones
-  // for(let i = 0; i<MenuTopOptions.length; i++ ) {
-  //   alert(MenuTopOptions[i])
-  // }
 
     //Colorear botón seleccionado
+
     // Al presionar inicio
     if(optionSelected === '#' + 'inicio') {
+
+      // menu top
       inicioDiv.style.backgroundColor="#0179FE";
       inicioBtnText.style.color="White"
+
+      // menu bottom
+      inicioDiv2.style.backgroundColor="#0179FE";
+      inicioBtnText2.style.color="White"
+
     } else {
+
+      // menu top
       inicioDiv.removeAttribute('style');
       inicioBtnText.removeAttribute('style');
+
+      // menu bottom
+      inicioDiv2.removeAttribute('style');
+      inicioBtnText2.removeAttribute('style');
+
     }
     // Al presionar recursos
+
     if(optionSelected === '#' + 'recursos') {
+
+      // menu top
       recursosDiv.style.backgroundColor="#0179FE";
       recursosBtnText.style.color="White"
+
+      // menu bottom
+      recursosDiv2.style.backgroundColor="#0179FE";
+      recursosBtnText2.style.color="White"
+
     } else {
+
+      // menu top
       recursosDiv.removeAttribute('style');
       recursosBtnText.removeAttribute('style');
+
+      // menu bottom
+      recursosDiv2.removeAttribute('style');
+      recursosBtnText2.removeAttribute('style');
+
     }
+
     // Al presionar proyectos
+
     if(optionSelected === '#' + 'proyectos') {
+
+      // menu top
       proyectosDiv.style.backgroundColor="#0179FE";
       proyectosBtnText.style.color="White"
+
+      // menu bottom
+      proyectosDiv2.style.backgroundColor="#0179FE";
+      proyectosBtnText2.style.color="White"
+
     } else {
+
+      // menu top
       proyectosDiv.removeAttribute('style');
       proyectosBtnText.removeAttribute('style');
+
+      // menu bottom
+      proyectosDiv2.removeAttribute('style');
+      proyectosBtnText2.removeAttribute('style');
     }
 }
 
 inicioBtn.addEventListener('click', menuOptionSelected)
 recursosBtn.addEventListener('click', menuOptionSelected)
 proyectosBtn.addEventListener('click', menuOptionSelected)
-
+inicioBtn2.addEventListener('click', menuOptionSelected)
+recursosBtn2.addEventListener('click', menuOptionSelected)
+proyectosBtn2.addEventListener('click', menuOptionSelected)
 
 

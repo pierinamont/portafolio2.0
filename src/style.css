@@ -260,7 +260,7 @@
   .section:nth-child(3) {
     display: grid;
     grid-template-columns: 1fr 300px;
-    gap: 16px;
+    column-gap: 16px;
   }
   
   .section:nth-child(3) .container {
@@ -532,14 +532,14 @@
       grid-row: none;
       display: flex;
       flex-direction: column;
-      row-gap: 16px; /*-----revisar----------*/
+      row-gap: 8px; /*-----revisar----------*/
     }
     
     .section:nth-child(3){
       grid-row: none;
       display: flex;
       flex-direction: column-reverse;
-      row-gap: 16px; /*-----revisar----------*/
+      row-gap: 8px; /*-----revisar----------*/
     }
     
     .section .container h1{
