@@ -293,7 +293,7 @@ function menuOptionSelected(e) {
     //Colorear botón seleccionado
 
     // Al presionar inicio
-    if(optionSelected === '#' + 'inicio') {
+    if(optionSelected === '#' + 'inicio-section') {
 
       // menu top
       inicioDiv.style.backgroundColor="#0179FE";
@@ -316,7 +316,7 @@ function menuOptionSelected(e) {
     }
     // Al presionar recursos
 
-    if(optionSelected === '#' + 'recursos') {
+    if(optionSelected === '#' + 'recursos-section') {
 
       // menu top
       recursosDiv.style.backgroundColor="#0179FE";
