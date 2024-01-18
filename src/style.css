@@ -1,350 +1,359 @@
-
 :root {
-    --font-light-color: #6C6C6C;
-    --font-dark-color: #414141;
-    
-    /*---------card---------*/
-    --card-color: #F8F8F8;
-    --line-color: #E2E2E2;
-    
-    --principal-color: #0179FE;
-    --blue-hover: #0449df;
+  --font-light-color: #6C6C6C;
+  --font-dark-color: #414141;
 
-     /*---------button---------*/
-     --line-button: #DEDEE0;
-  }
-  
-  * {
-    font-family: 'Manrope', sans-serif;
-    font-size: 14px;
-    color: var(--font-light-color);
-  }
-  
- body {
-     margin: 0px;
-  } 
-  
-  /* -------------- MENU ------------------- */
-  header {
-    padding-bottom: 32px;
-    padding-top: 32px;
-  }
+  /*---------card---------*/
+  --card-color: #F8F8F8;
+  --line-color: #E2E2E2;
 
-  .menu-container {
-    display: flex;
-    background-color: white;
-    border: 1px solid #E9E9E9;
-    padding: 4px;
-    border-radius: 100px;
-    height: 45px;
-    box-shadow: -1px 3px 15px 0px rgba(0,0,0,0.11);
-    align-items: center;
-    justify-content: space-between;
-    gap: 4px;
-    width: auto;
-  }
+  --principal-color: #0179FE;
+  --blue-hover: #0449df;
 
-  .menu-container #iniciobtn,
-  .menu-container #recursosbtn,
-  .menu-container #proyectosbtn,
-  .menu-container #iniciobtn2,
-  .menu-container #recursosbtn2,
-  .menu-container #proyectosbtn2 {
-    text-decoration: none;
-  }
-  
-  .menu-container .button {
-    height: 108px;
-    width: 108px;
-    cursor: pointer;
-    /* background-color: #F8F8F8; */
-    height: 45px;
-    border-radius: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;  
-  }
-  
-  .menu-container .button p {
-    color: #0179FE;
-    font-weight: 500;
-    text-align: center;
-  }
-  
-  /* -------------- ICONS ------------------- */
-  header {
-    margin-left: 100px;
-    margin-right: 100px;
-  }
-  
-  header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  header nav .icons {
-    display: flex;
-    gap: 20px;
-  }
-  
-  header nav .icons .linkedin,
-  header nav .icons .resume,
-  header nav .icons .email {
-    height: 28px;
-    width: 28px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-  }
-  
-  header nav .icons .linkedin {
-      background-image: url("../assets/linkedin-logo.svg");
-  }
-  
-  header nav .icons .resume {
-      background-image: url("../assets/resume-icon.svg");
-  }
-  
-  header nav .icons .email {
-      background-image: url("../assets/email-icon.svg");
-  }
+  /*---------button---------*/
+  --line-button: #DEDEE0;
+}
 
-  header nav .icons .linkedin:hover {
-    color: blue
-  }
+* {
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  color: var(--font-light-color);
+}
+
+body {
+  margin: 0px;
+}
+
+/* -------------- MENU ------------------- */
+header {
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
+
+.menu-container {
+  display: flex;
+  background-color: white;
+  border: 1px solid #E9E9E9;
+  padding: 4px;
+  border-radius: 100px;
+  height: 45px;
+  box-shadow: -1px 3px 15px 0px rgba(0, 0, 0, 0.11);
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  width: auto;
+}
+
+.menu-container #iniciobtn,
+.menu-container #recursosbtn,
+.menu-container #proyectosbtn,
+.menu-container #iniciobtn2,
+.menu-container #recursosbtn2,
+.menu-container #proyectosbtn2 {
+  text-decoration: none;
+  line-height:16px;
+}
+
+.menu-container .button {
+  height: 108px;
+  width: 108px;
+  cursor: pointer;
+  /* background-color: #F8F8F8; */
+  height: 45px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-container .button p {
+  color: #0179FE;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* -------------- ICONS ------------------- */
+header {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .icons {
+  display: flex;
+  gap: 20px;
+}
+
+header nav .icons .linkedin,
+header nav .icons .resume,
+header nav .icons .email {
+  height: 28px;
+  width: 28px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+header nav .icons .linkedin {
+  background-image: url("../assets/linkedin-logo.svg");
+}
+
+header nav .icons .resume {
+  background-image: url("../assets/resume-icon.svg");
+}
+
+header nav .icons .email {
+  background-image: url("../assets/email-icon.svg");
+}
+
+header nav .icons .linkedin:hover {
+  color: blue
+}
 
 
 
 /*-------------- MENU BOTTOM --------------------*/
-  .menu-bottom-section {
-    /* width: 100%; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 24px;
-    position: fixed;
-    bottom: 0%;
-    z-index: 1;
-    left: 50%;
-    right: 50%;
+.menu-bottom-section {
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+  position: fixed;
+  bottom: 0%;
+  z-index: 1;
+  left: 50%;
+  right: 50%;
 }
 
 /*--------------GRID--------------------*/
 
 
-  .inicio-section {
-    display: grid;
-    gap: 16px;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1300px;
-    grid-template-columns: 450px 1fr; /*------PRUEBA;-----*/
-    margin-bottom: 25px;
-  }
+.inicio-section {
+  display: grid;
+  gap: 16px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1300px;
+  grid-template-columns: 450px 1fr;
+  /*------PRUEBA;-----*/
+  margin-bottom: 25px;
+}
 
-  hr {
-    border: 1px solid var(--line-color);
-  }
-   
-  
-  .inicio-section .container {
-    background-color: var(--card-color);
-    padding: 24px;
-    border-radius: 32px;
-  }
-
-  .inicio-section .container .content,
-  .inicio-section .container .content-dribbble,
-  .inicio-section .container .content-codepen {
-    line-height: 26px;
-  }
-
-  .inicio-section .container .content .like-section h4 {
-    color: #A2A2A2;
-    font-style: italic;
-    font-weight: 300;
-    margin-bottom: 14px;
-  }
-
-  .inicio-section .container .content .like-section .cards {
-    display: flex;
-  }
-  
-  .inicio-section .container .content .like-section .cards .icon-container {
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
-    background-color: white;
-    margin-right: 24px;
-    box-shadow: 0px 2px 4px 0px rgba(45, 45, 45, 0.24);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .inicio-section .container .content .like-section .cards .icon-container .icon-img {
-    width: 30px;
-    height: 30px;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .inicio-section .container .content .like-section .cards .icon-container:nth-child(1) .icon-img {
-    background-image: url("../assets/cafe.png");
-  }
-
-  .inicio-section .container .content .like-section .cards .icon-container:nth-child(2) .icon-img {
-    background-image: url("../assets/correr.png");
-  }
-
-  .inicio-section .container .content .like-section .cards .icon-container:nth-child(3) .icon-img {
-    background-image: url("../assets/desarrollo.png");
-  }
-
-  .inicio-section .container .content .like-section .cards .icon-container:nth-child(4) .icon-img {
-    background-image: url("../assets/diseño.png");
-  }
-
-  .inicio-section .container .content .like-section .cards .icon-container:nth-child(5) .icon-img {
-    background-image: url("../assets/games.png");
-  }
+hr {
+  border: 1px solid var(--line-color);
+}
 
 
+.inicio-section .container {
+  background-color: var(--card-color);
+  padding: 24px;
+  border-radius: 32px;
+}
 
-  .section .container .header {
-    display: grid;
-    grid-template-columns: 1fr 50px;
-    align-items: center;
-  }
+.inicio-section .container .content,
+.inicio-section .container .content-dribbble,
+.inicio-section .container .content-codepen {
+  line-height: 26px;
+}
+.inicio-section .container .content-dribbble,
+.inicio-section .container .content-codepen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
 
-  
- .section .container .content-dribbble .description,
- .section .container .content-codepen .description  {
+
+.inicio-section .container .content .like-section h4 {
+  color: #A2A2A2;
+  font-style: italic;
+  font-weight: 300;
+  margin-bottom: 14px;
+}
+
+.inicio-section .container .content .like-section .cards {
+  display: flex;
+}
+
+.inicio-section .container .content .like-section .cards .icon-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: white;
+  margin-right: 24px;
+  box-shadow: 0px 2px 4px 0px rgba(45, 45, 45, 0.24);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inicio-section .container .content .like-section .cards .icon-container .icon-img {
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.inicio-section .container .content .like-section .cards .icon-container:nth-child(1) .icon-img {
+  background-image: url("../assets/cafe.png");
+}
+
+.inicio-section .container .content .like-section .cards .icon-container:nth-child(2) .icon-img {
+  background-image: url("../assets/correr.png");
+}
+
+.inicio-section .container .content .like-section .cards .icon-container:nth-child(3) .icon-img {
+  background-image: url("../assets/desarrollo.png");
+}
+
+.inicio-section .container .content .like-section .cards .icon-container:nth-child(4) .icon-img {
+  background-image: url("../assets/diseño.png");
+}
+
+.inicio-section .container .content .like-section .cards .icon-container:nth-child(5) .icon-img {
+  background-image: url("../assets/games.png");
+}
+
+
+
+.section .container .header {
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  align-items: center;
+}
+
+
+.section .container .content-dribbble .description,
+.section .container .content-codepen .description {
   margin-top: 0px;
- }
+}
 
 
- .section .container .content-codepen #github-link{
+.section .container .content-codepen #github-link {
   color: var(--principal-color)
- }
-  
-  .container .header h1 { 
-    font-size: 20px;
-    margin: 0px;
-    font-weight: 500;
-  }
-  
-  .container:nth-child(1) {
-    grid-row: 1/3;
-  }
+}
 
-  .projects-button {
-    text-decoration: none;
-  }
+.container .header h1 {
+  font-size: 20px;
+  margin: 0px;
+  font-weight: 500;
+}
 
-  .container .content-dribbble .projects-button,
-  .container .content-codepen .projects-button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    border: 1px solid var(--line-color);
-    background-color: transparent;
-    border-radius: 100px;
-    width: 100%;
-    cursor: pointer;
-  }
-  
-  .container .content-dribbble .projects-button p,
-  .container .content-dribbble .projects-button i,
-  .container .content-codepen .projects-button p,
-  .container .content-codepen .projects-button i {
-      color: var(--font-dark-color);
-  }
+.container:nth-child(1) {
+  grid-row: 1/3;
+}
 
-  .container .content-dribbble .projects-button .icon,
-  .container .content-codepen .projects-button .icon {
-    width: 16px;
-    height: 16px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url("../assets/arrow.png");
-  }
-  
-  
- 
+.projects-button {
+  text-decoration: none;
+}
 
-  /*--------- logod ---------*/
-  .section .container .header .img-icon {
-    width: 32px;
-    height: 32px;
-    border-radius: 50px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-left: auto;
-  }
+.container .content-dribbble .projects-button,
+.container .content-codepen .projects-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid var(--line-color);
+  background-color: transparent;
+  border-radius: 100px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.container .content-dribbble .projects-button p,
+.container .content-dribbble .projects-button i,
+.container .content-codepen .projects-button p,
+.container .content-codepen .projects-button i {
+  color: var(--font-dark-color);
+}
+
+.container .content-dribbble .projects-button .icon,
+.container .content-codepen .projects-button .icon {
+  width: 16px;
+  height: 16px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../assets/arrow.png");
+}
 
 
-  /*------------------ dribbble -------------------*/
-  .section:nth-child(2) {
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    gap: 16px;
-  }
-  
-   /*------------------ REVISAR -------------------*/
-   /*  */
-  .section:nth-child(2) .container {
-    grid-row: 1 / 3;
-    position: relative;
-    overflow-y: hidden;
-    overflow-x: auto;
-  }
-
-  .section:nth-child(2) .container .header .img-icon {
-    background-image: url("../assets/dribble.webp");
-  }
-  
-  .section:nth-child(1) .container:nth-child(2) {
-    height: 230px;
-  }
-
-  #dribble-section .container:nth-child(2) {
-    height: 230px;
-  }
 
 
-  /*------------------ codepen -------------------*/
-  .section:nth-child(3) {
-    display: grid;
-    grid-template-columns: 1fr 300px;
-    column-gap: 16px;
-  }
-  
-  .section:nth-child(3) .container {
-    grid-row: 1 / 3;
-    position: relative;
-    overflow-y: hidden;
-    overflow-x: auto;
-  }
-  
-  
-  .section .container:nth-child(3) .header,
-  .section .container:nth-child(4) .header{
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .section:nth-child(3) .container .header .img-icon {
-    background-image: url("../assets/codepen-logo.webp");
-  }
-  
- #codepen-section .container:nth-child(1) {
-    height: 230px;
-  }
+/*--------- logod ---------*/
+.section .container .header .img-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: auto;
+}
+
+
+/*------------------ dribbble -------------------*/
+.section:nth-child(2) {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 16px;
+}
+
+/*------------------ REVISAR -------------------*/
+/*  */
+.section:nth-child(2) .container {
+  grid-row: 1 / 3;
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.section:nth-child(2) .container .header .img-icon {
+  background-image: url("../assets/dribble.webp");
+}
+
+.section:nth-child(1) .container:nth-child(2) {
+  height: 230px;
+}
+
+#dribble-section .container:nth-child(2) {
+  height: 230px;
+}
+
+
+/*------------------ codepen -------------------*/
+.section:nth-child(3) {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 16px;
+}
+
+.section:nth-child(3) .container {
+  grid-row: 1 / 3;
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+
+.section .container:nth-child(3) .header,
+.section .container:nth-child(4) .header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section:nth-child(3) .container .header .img-icon {
+  background-image: url("../assets/codepen-logo.webp");
+}
+
+#codepen-section .container:nth-child(1) {
+  height: 230px;
+}
 
 
 /*---------------  scroll cards ---------------------- */
@@ -386,6 +395,7 @@
   background-image: url(../assets/dribble01.png);
   background-position-y: 7%;
 }
+
 /*---------------  dribble 02 ----------------- */
 .content-cards-dribbble .card-container:nth-child(2) .image {
   height: 100%;
@@ -397,12 +407,13 @@
   background-image: url(../assets/dribble02.png);
   background-position-y: 71%;
 }
+
 /*---------------  dribble 03 ----------------- */
 .content-cards-dribbble .card-container:nth-child(3) .image {
   height: 100%;
   border-radius: 16px;
   background-color: lightgray;
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
   background-image: url(../assets/dribble03.png);
@@ -422,7 +433,7 @@
   background-position-x: 51%;
   background-image: url(../assets/codepen01.png);
   background-position-y: 7%;
-  
+
 }
 
 /*---------------  Codepen 02 ----------------- */
@@ -432,7 +443,7 @@
   background-color: lightgray;
   background-size: cover;
   background-repeat: no-repeat;
-  
+
   background-position-x: 34%;
   background-image: url(../assets/codepen02.png);
   background-position-y: 1%;
@@ -451,17 +462,18 @@
 }
 
 .content-cards-dribbble .card-container:hover,
-.content-cards-codepen .card-container:hover  {
+.content-cards-codepen .card-container:hover {
   border: 2px solid var(--principal-color);
   border-radius: 18px;
   /* box-shadow: 1px -1px 14px 1px rgba(98, 98, 98, 0.75); */
 }
+
 /* .content-cards-dribbble .card-container .image:hover {
   background-size: 370%;
   background-position-x: 51%;
 } */
 
-.content-cards-dribbble a, 
+.content-cards-dribbble a,
 .content-cards-codepen a {
   text-decoration: none;
 }
@@ -498,7 +510,7 @@
 }
 
 .card-button:hover {
-  box-shadow: 1px -1px 14px 1px rgba(1,121,254,0.75);
+  box-shadow: 1px -1px 14px 1px rgba(1, 121, 254, 0.75);
 }
 
 .card-button .info-container {
@@ -551,7 +563,7 @@
   height: 8px;
   position: absolute;
   cursor: pointer;
-  
+
 }
 
 /* Track (bg)*/
@@ -585,6 +597,7 @@
   font-weight: 500;
   margin-top: 50px;
 }
+
 .recursos-section .cards-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -641,7 +654,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 .resources-container .content .head-content .circle-button .arrow-icon {
@@ -658,7 +671,7 @@
   font-weight: 500;
 }
 
-.resources-container .content .words span{
+.resources-container .content .words span {
   background-color: var(--principal-color);
   color: white;
   padding-top: 4px;
@@ -688,46 +701,48 @@
 
 
 
-    /*------------------ responsive cards ----------------*/
-  
-  
-  @media (max-width: 1250px) {
-    
-    .inicio-section {
-      display: flex;
-      flex-direction: column;
-      width: 90%;
-    }
-    
-    .section:nth-child(2),
-    .section:nth-child(3){
-    row-gap: 0px;
-    }
-    
-  }
-  
-  @media (max-width: 850px) {
-    
-    .section:nth-child(2){
-      grid-row: none;
-      display: flex;
-      flex-direction: column;
-      row-gap: 8px; /*-----revisar----------*/
-    }
-    
-    .section:nth-child(3){
-      grid-row: none;
-      display: flex;
-      flex-direction: column-reverse;
-      row-gap: 8px; /*-----revisar----------*/
-    }
-    
-    .section .container h1{
-      font-size: 18px;
-    }
+/*------------------ responsive cards ----------------*/
+
+
+@media (max-width: 1250px) {
+
+  .inicio-section {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
   }
 
- /*------------------ margin menu ----------------*/  
+  .section:nth-child(2),
+  .section:nth-child(3) {
+    row-gap: 0px;
+  }
+
+}
+
+@media (max-width: 850px) {
+
+  .section:nth-child(2) {
+    grid-row: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    /*-----revisar----------*/
+  }
+
+  .section:nth-child(3) {
+    grid-row: none;
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 8px;
+    /*-----revisar----------*/
+  }
+
+  .section .container h1 {
+    font-size: 18px;
+  }
+}
+
+/*------------------ margin menu ----------------*/
 
 
 @media (max-width: 740px) {
@@ -740,30 +755,31 @@
     font-size: 18px;
   }
 
-  .content-cards-dribbble, .content-cards-codepen {
+  .content-cards-dribbble,
+  .content-cards-codepen {
     top: 95px;
   }
 
   #dribble-section .container:nth-child(2),
-  #codepen-section .container:nth-child(1)  {
+  #codepen-section .container:nth-child(1) {
     height: 250px;
-}
+  }
 }
 
- /*------------------seccion recursos ----------------*/ 
+/*------------------seccion recursos ----------------*/
 
 @media (max-width: 1047px) {
 
   .recursos-section .cards-section {
     grid-template-columns: 1fr;
   }
-  
+
 }
 
 
 @media (max-width: 520px) {
 
-  .recursos-section  .content .head-content .title-section .words {
+  .recursos-section .content .head-content .title-section .words {
     flex-wrap: wrap;
     gap: 7px;
   }
@@ -773,8 +789,8 @@
     height: 38px;
   }
 
-  .recursos-section  .content .head-content .title-section .words span {
+  .recursos-section .content .head-content .title-section .words span {
     font-size: 12px;
   }
-  
+
 }

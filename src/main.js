@@ -280,12 +280,36 @@ window.addEventListener('resize', changeMenus);
 
 
 
+// Función para poner inicio como default ////////////////////////////////////
+
+// falta corregir que al cargar la página la vista se redireccione a la sección de inicio
+let inicioDefaultSelected = true
+
+if(inicioDefaultSelected === true) {
+  // menu top
+  inicioDiv.style.backgroundColor="#0179FE";
+  inicioBtnText.style.color="White"
+
+  // menu bottom
+  inicioDiv2.style.backgroundColor="#0179FE";
+  inicioBtnText2.style.color="White"
+
+} else {
+
+  // menu top
+  inicioDiv.removeAttribute('style');
+  inicioBtnText.removeAttribute('style');
+
+  // menu bottom
+  inicioDiv2.removeAttribute('style');
+  inicioBtnText2.removeAttribute('style');
+
+}
+
 // Función para seleccionar menú ////////////////////////////////////
-
-
 function menuOptionSelected(e) {
 
-  // let btnSelectedDefault = "inicio"
+  inicioDefaultSelected = false;
   
   // guardar opción seleccionada
   let optionSelected = e.currentTarget.getAttribute("href");
@@ -293,7 +317,7 @@ function menuOptionSelected(e) {
     //Colorear botón seleccionado
 
     // Al presionar inicio
-    if(optionSelected === '#' + 'inicio-section') {
+    if(optionSelected === '#' + 'inicio-section' ) {
 
       // menu top
       inicioDiv.style.backgroundColor="#0179FE";
