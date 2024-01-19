@@ -590,6 +590,7 @@ hr {
 .recursos-section {
   width: 90%;
   margin: 0 auto;
+  margin-bottom: 120px;
 }
 
 .recursos-section h1 {
@@ -617,7 +618,7 @@ hr {
 
 .resources-container:hover {
   background-color: rgba(1, 121, 254, 0.05);
-  border: 2px solid var(--principal-color);
+  /* border: 2px solid var(--principal-color); */
 }
 
 .resources-container .img-recurso {
