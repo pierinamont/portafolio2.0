@@ -181,6 +181,13 @@ hr {
   display: flex;
 }
 
+.inicio-section .container .content .like-section .cards .icon-container {
+  cursor: pointer;
+}
+
+.inicio-section .container .content .like-section .cards .icon-container:hover {
+  box-shadow: 0px 0px 0px 7px rgba(0, 0, 0, 0.15);
+}
 
 
 .inicio-section .container .content .like-section .cards .icon-container .icon-img {
@@ -240,6 +247,10 @@ hr {
   padding-right: 16px;
   top: -84px;
   position: relative;
+}
+
+.inicio-section .container .content .like-expanded-section {
+  position: absolute
 }
 
 .inicio-section .container .content .like-expanded-section .text-container p {
@@ -735,7 +746,7 @@ hr {
   .inicio-section {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 85%;
   }
 
   .section:nth-child(2),

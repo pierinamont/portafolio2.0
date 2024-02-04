@@ -394,3 +394,82 @@ recursosBtn2.addEventListener('click', menuOptionSelected)
 proyectosBtn2.addEventListener('click', menuOptionSelected)
 
 
+// Función para mostrar textos flotantes ////////////////////////////////////
+
+// Elementos de menú ////////////////////////////////////
+let coffeeBtn = document.getElementById('coffee');
+let runningBtn = document.getElementById('running');
+let codeDesignBtn = document.getElementById('codeDesign');
+let figmaDesignBtn = document.getElementById('figmaDesign');
+let gamesBtn = document.getElementById('games');
+
+let messages = document.getElementById('messages');
+let hiddenMessage = document.getElementsByClassName('hiddenMessage');
+
+// ocultar contenedor de mensaje
+// messageContainer.style.display= 'none';
+// coffeeBtn = false;
+// runningBtn = false;
+// codeDesignBtn = false;
+// figmaDesignBtn = false;
+// gamesBtn = false;
+
+messages.style.display = 'none'
+
+let clicksOnIcon = 1;
+
+function showHiddeMessage(e) {
+
+
+  let getId = e.currentTarget.getAttribute("id");
+ 
+
+  if(getId == "coffee") {
+    messages.style.display = 'flex'
+    hiddenMessage[0].style.display = 'block';
+    hiddenMessage[1].style.display = 'none';
+    hiddenMessage[2].style.display = 'none';
+    hiddenMessage[3].style.display = 'none';
+    hiddenMessage[4].style.display = 'none';
+
+  } else if (getId == "running") {
+    messages.style.display = 'flex'
+    hiddenMessage[0].style.display = 'none';
+    hiddenMessage[1].style.display = 'block';
+    hiddenMessage[2].style.display = 'none';
+    hiddenMessage[3].style.display = 'none';
+    hiddenMessage[4].style.display = 'none';
+
+  } else if (getId == "codeDesign") {
+    messages.style.display = 'flex'
+    hiddenMessage[0].style.display = 'none';
+    hiddenMessage[1].style.display = 'none';
+    hiddenMessage[2].style.display = 'block';
+    hiddenMessage[3].style.display = 'none';
+    hiddenMessage[4].style.display = 'none';
+
+  } else if (getId == "figmaDesign") {
+    messages.style.display = 'flex'
+    hiddenMessage[0].style.display = 'none';
+    hiddenMessage[1].style.display = 'none';
+    hiddenMessage[2].style.display = 'none';
+    hiddenMessage[3].style.display = 'block';
+    hiddenMessage[4].style.display = 'none';
+
+  } else if (getId == "games") {
+    messages.style.display = 'flex'
+    hiddenMessage[0].style.display = 'none';
+    hiddenMessage[1].style.display = 'none';
+    hiddenMessage[2].style.display = 'none';
+    hiddenMessage[3].style.display = 'none';
+    hiddenMessage[4].style.display = 'block';
+  }
+}
+
+coffeeBtn.addEventListener("click", showHiddeMessage);
+runningBtn.addEventListener("click", showHiddeMessage);
+codeDesignBtn.addEventListener("click", showHiddeMessage);
+figmaDesignBtn.addEventListener("click", showHiddeMessage);
+gamesBtn.addEventListener("click", showHiddeMessage);
+
+window.addEventListener('resize', showHiddeMessage);
