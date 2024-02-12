@@ -403,67 +403,118 @@ let codeDesignBtn = document.getElementById('codeDesign');
 let figmaDesignBtn = document.getElementById('figmaDesign');
 let gamesBtn = document.getElementById('games');
 
-let messages = document.getElementById('messages');
-let hiddenMessage = document.getElementsByClassName('hiddenMessage');
+let messagesContainer = document.getElementById('messages-container');
 
-// ocultar contenedor de mensaje
-// messageContainer.style.display= 'none';
-// coffeeBtn = false;
-// runningBtn = false;
-// codeDesignBtn = false;
-// figmaDesignBtn = false;
-// gamesBtn = false;
+// Oculta contenedor de mensajes
+messagesContainer.style.display = 'none'
 
-messages.style.display = 'none'
+// let hiddenMessage = document.getElementsByClassName('hiddenMessage');
+let hiddenMessage = document.querySelectorAll('.text-container p');
 
-let clicksOnIcon = 1;
+
+
+
+
 
 function showHiddeMessage(e) {
 
+// Obtener id de los botones de iconos
+let getId = e.currentTarget.getAttribute("id");
 
-  let getId = e.currentTarget.getAttribute("id");
+let hiddenMessageSelected = ''
+
+for(let i = 0; i < hiddenMessage.length; i++ ) {
+  // hiddenMessageLIST = hiddenMessage[i]
+  
+  if(hiddenMessage[i].className == getId + 'Message') {
+    hiddenMessageSelected = hiddenMessage[i]
+  } 
+}
+
+console.log(hiddenMessageSelected)
+
+
+
+
+
+ // obtener los textos ocultos
+//  myArrayHiddenText
+
+//  if(getId == "coffee") {
+//     // mostrar contenedor azul de mensaje
+//     messages.style.display = 'flex'
+//     myArrayHiddenText[0].style.display = 'block';
+//     // hiddenMessage[1].style.display = 'none';
+//     // hiddenMessage[2].style.display = 'none';
+//     // hiddenMessage[3].style.display = 'none';
+//     // hiddenMessage[4].style.display = 'none';
+
+//   }
  
+ 
+ 
+ 
+ 
+ // let shownMessage = hiddenMessage.filter((msg) => msg == getId + 'Message')
+  // alert(shownMessage + 'prueba')
 
-  if(getId == "coffee") {
-    messages.style.display = 'flex'
-    hiddenMessage[0].style.display = 'block';
-    hiddenMessage[1].style.display = 'none';
-    hiddenMessage[2].style.display = 'none';
-    hiddenMessage[3].style.display = 'none';
-    hiddenMessage[4].style.display = 'none';
+  // numOfClicks++;
+  // if (numOfClicks > 2) {
+  //   numOfClicks = 0;
+  // }
 
-  } else if (getId == "running") {
-    messages.style.display = 'flex'
-    hiddenMessage[0].style.display = 'none';
-    hiddenMessage[1].style.display = 'block';
-    hiddenMessage[2].style.display = 'none';
-    hiddenMessage[3].style.display = 'none';
-    hiddenMessage[4].style.display = 'none';
 
-  } else if (getId == "codeDesign") {
-    messages.style.display = 'flex'
-    hiddenMessage[0].style.display = 'none';
-    hiddenMessage[1].style.display = 'none';
-    hiddenMessage[2].style.display = 'block';
-    hiddenMessage[3].style.display = 'none';
-    hiddenMessage[4].style.display = 'none';
+  // alert(hiddenMessage[0])
+   // Muestra el mensaje correspondiente al botón clicado
+  //  let currentMessage = document.getElementById(getId + 'Message');
+  //  currentMessage.style.display = 'block';
 
-  } else if (getId == "figmaDesign") {
-    messages.style.display = 'flex'
-    hiddenMessage[0].style.display = 'none';
-    hiddenMessage[1].style.display = 'none';
-    hiddenMessage[2].style.display = 'none';
-    hiddenMessage[3].style.display = 'block';
-    hiddenMessage[4].style.display = 'none';
 
-  } else if (getId == "games") {
-    messages.style.display = 'flex'
-    hiddenMessage[0].style.display = 'none';
-    hiddenMessage[1].style.display = 'none';
-    hiddenMessage[2].style.display = 'none';
-    hiddenMessage[3].style.display = 'none';
-    hiddenMessage[4].style.display = 'block';
-  }
+  // let shownMessage = Array.hiddenMessage.filter((msg) => msg == getId + 'Message')
+  // alert(shownMessage + 'prueba')
+////////////////////////////////////////////////////////////////////////
+
+  // if(getId == "coffee") {
+ 
+  //   messages.style.display = 'flex'
+  //   hiddenMessage[0].style.display = 'block';
+  //   hiddenMessage[1].style.display = 'none';
+  //   hiddenMessage[2].style.display = 'none';
+  //   hiddenMessage[3].style.display = 'none';
+  //   hiddenMessage[4].style.display = 'none';
+
+  // } else if (getId == "running") {
+  //   messages.style.display = 'flex'
+  //   hiddenMessage[0].style.display = 'none';
+  //   hiddenMessage[1].style.display = 'block';
+  //   hiddenMessage[2].style.display = 'none';
+  //   hiddenMessage[3].style.display = 'none';
+  //   hiddenMessage[4].style.display = 'none';
+
+  // } else if (getId == "codeDesign") {
+  //   messages.style.display = 'flex'
+  //   hiddenMessage[0].style.display = 'none';
+  //   hiddenMessage[1].style.display = 'none';
+  //   hiddenMessage[2].style.display = 'block';
+  //   hiddenMessage[3].style.display = 'none';
+  //   hiddenMessage[4].style.display = 'none';
+
+  // } else if (getId == "figmaDesign") {
+  //   messages.style.display = 'flex'
+  //   hiddenMessage[0].style.display = 'none';
+  //   hiddenMessage[1].style.display = 'none';
+  //   hiddenMessage[2].style.display = 'none';
+  //   hiddenMessage[3].style.display = 'block';
+  //   hiddenMessage[4].style.display = 'none';
+
+  // } else if (getId == "games") {
+  //   messages.style.display = 'flex'
+  //   hiddenMessage[0].style.display = 'none';
+  //   hiddenMessage[1].style.display = 'none';
+  //   hiddenMessage[2].style.display = 'none';
+  //   hiddenMessage[3].style.display = 'none';
+  //   hiddenMessage[4].style.display = 'block';
+  // }
 }
 
 coffeeBtn.addEventListener("click", showHiddeMessage);
