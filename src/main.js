@@ -421,15 +421,24 @@ function showHiddeMessage(e) {
 // Obtener id de los botones de iconos
 let getId = e.currentTarget.getAttribute("id");
 
+// Variable para guardar el elemento seleccionado
 let hiddenMessageSelected = ''
 
+// recorrer todos los elementos p
 for(let i = 0; i < hiddenMessage.length; i++ ) {
-  // hiddenMessageLIST = hiddenMessage[i]
   
+  // si el elemento tiene un clasname = al id seleccionado
   if(hiddenMessage[i].className == getId + 'Message') {
+
+    // Guarda elemento seleccionado en la variable
     hiddenMessageSelected = hiddenMessage[i]
   } 
 }
+
+// Si es el primer click al id y su clase es igual a id + message,
+// que se muestre el mensaje 
+messagesContainer.style.display = 'block'
+
 
 console.log(hiddenMessageSelected)
 
