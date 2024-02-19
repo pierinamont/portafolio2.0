@@ -404,7 +404,7 @@ function menuOptionSelected(e) {
 
     // Al presionar proyectos
 
-    if(optionSelected === '#' + 'proyectos') {
+    if(optionSelected === '#' + 'proyectos-section') {
 
       // menu top
       proyectosDiv.style.backgroundColor="#0179FE";
