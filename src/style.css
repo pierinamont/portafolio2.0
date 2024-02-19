@@ -195,29 +195,34 @@ hr {
   height: 30px;
   background-size: cover;
   background-repeat: no-repeat;
+  
 }
 
-
+/* ICONOS DE SETUP DE TRABAJO */
 
 .inicio-section .container .content .like-section .cards .icon-container:nth-child(1) .icon-img {
   background-image: url("../assets/cafe.png");
 }
 
 .inicio-section .container .content .like-section .cards .icon-container:nth-child(2) .icon-img {
-  background-image: url("../assets/correr.png");
+  background-image: url("../assets/figma-logo.png");
+  background-position: center;
+  background-size: contain;
 }
 
 .inicio-section .container .content .like-section .cards .icon-container:nth-child(3) .icon-img {
-  background-image: url("../assets/desarrollo.png");
+  background-image: url("../assets/spotify-logo.png");
+  background-position: center;
+  background-size: contain;
 }
 
-.inicio-section .container .content .like-section .cards .icon-container:nth-child(4) .icon-img {
+/* .inicio-section .container .content .like-section .cards .icon-container:nth-child(4) .icon-img {
   background-image: url("../assets/diseño.png");
 }
 
 .inicio-section .container .content .like-section .cards .icon-container:nth-child(5) .icon-img {
   background-image: url("../assets/games.png");
-}
+} */
 
 
 .inicio-section .container .content .like-section .cards .icon-container {
@@ -622,25 +627,105 @@ hr {
 } */
 
 
-/*----------------------- RECURSOS -------------------------*/
-.recursos-section {
-  width: 90%;
+
+/*----------------------- CASOS DE ESTUDIO / RECURSOS  -------------------------*/
+.recursos-section,
+.casos_de_estudio-section {
+  width: 85%;
   margin: 0 auto;
   margin-bottom: 120px;
 }
 
+.casos_de_estudio-section h1,
 .recursos-section h1 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   margin-top: 50px;
 }
 
+.casos_de_estudio-section .cards-section,
 .recursos-section .cards-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
 }
 
+/* ---------------------- CASOS DE ESTUDIO ------------------------*/
+
+.casos_de_estudio-section .container-img {
+  background-color: grey;
+  /* width: 645px; */
+  height: 280px;
+  border-radius: 28px;
+  padding: 16px;
+  background: url("https://pierinamont.github.io/hosted-assets/ilias-chebbi-2gpfqhEFVZ8-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.casos_de_estudio-section .container-transparent {  
+  border-radius: 32px;
+  border: 1px solid #FFF;
+  background: rgba(255, 255, 255, 0.50);
+  backdrop-filter: blur(1.5px);
+  padding: 14px;
+   position: relative;
+  top: 60%;
+}
+
+.casos_de_estudio-section  .container-content {
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.casos_de_estudio-section .container-content .container-text {
+  background-color: white;
+  width: 100%;
+  padding: 16px;
+  border-radius: 18px;
+}
+
+.casos_de_estudio-section .container-content .container-text h3 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.casos_de_estudio-section .container-content .container-text p {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.casos_de_estudio-section .container-content a {
+  text-decoration: none;
+  height: 80px;
+}
+.casos_de_estudio-section .container-content button {
+  background: var(--principal-color);
+  cursor: pointer;
+  border: none;
+  color: white;
+  width: auto;
+  border-radius: 18px;
+  color: white;
+  font-size: 14px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+} 
+
+.casos_de_estudio-section .container-content button:hover {
+  background-color: #0D4BEB
+}
+
+
+
+
+/* ------------------------- RECURSOS  ------------------------- */
 .resources-container {
   display: flex;
   box-sizing: border-box;
@@ -803,10 +888,10 @@ hr {
   }
 }
 
-/*------------------seccion recursos ----------------*/
+/*------------------seccion CASOS DE ESTUDIO / recursos ----------------*/
 
 @media (max-width: 1047px) {
-
+ .casos_de_estudio-section .cards-section,
   .recursos-section .cards-section {
     grid-template-columns: 1fr;
   }

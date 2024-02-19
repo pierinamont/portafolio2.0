@@ -394,142 +394,57 @@ recursosBtn2.addEventListener('click', menuOptionSelected)
 proyectosBtn2.addEventListener('click', menuOptionSelected)
 
 
-// Función para mostrar textos flotantes ////////////////////////////////////
+// Función para mostrar MENSAJES OCULTOS ////////////////////////////////////
 
 // Elementos de menú ////////////////////////////////////
-let coffeeBtn = document.getElementById('coffee');
-let runningBtn = document.getElementById('running');
-let codeDesignBtn = document.getElementById('codeDesign');
-let figmaDesignBtn = document.getElementById('figmaDesign');
-let gamesBtn = document.getElementById('games');
+// let coffeeBtn = document.getElementById('coffee');
+// let runningBtn = document.getElementById('running');
+// let codeDesignBtn = document.getElementById('codeDesign');
+// let figmaDesignBtn = document.getElementById('figmaDesign');
+// let gamesBtn = document.getElementById('games');
 
-let messagesContainer = document.getElementById('messages-container');
+// let messagesContainer = document.getElementById('messages-container');
 
-// Oculta contenedor de mensajes
-messagesContainer.style.display = 'none'
+// // Oculta contenedor de mensajes
+// messagesContainer.style.display = 'none'
 
-// let hiddenMessage = document.getElementsByClassName('hiddenMessage');
-let hiddenMessage = document.querySelectorAll('.text-container p');
-
-
+// // let hiddenMessage = document.getElementsByClassName('hiddenMessage');
+// let hiddenMessage = document.querySelectorAll('.text-container p');
 
 
 
+// function showHiddeMessage(e) {
 
-function showHiddeMessage(e) {
+// // Obtener id de los botones de iconos
+// let getId = e.currentTarget.getAttribute("id");
 
-// Obtener id de los botones de iconos
-let getId = e.currentTarget.getAttribute("id");
+// // Variable para guardar el elemento seleccionado
+// let hiddenMessageSelected = ''
 
-// Variable para guardar el elemento seleccionado
-let hiddenMessageSelected = ''
-
-// recorrer todos los elementos p
-for(let i = 0; i < hiddenMessage.length; i++ ) {
+// // recorrer todos los elementos p
+// for(let i = 0; i < hiddenMessage.length; i++ ) {
   
-  // si el elemento tiene un clasname = al id seleccionado
-  if(hiddenMessage[i].className == getId + 'Message') {
+//   // si el elemento tiene un clasname = al id seleccionado
+//   if(hiddenMessage[i].className == getId + 'Message') {
 
-    // Guarda elemento seleccionado en la variable
-    hiddenMessageSelected = hiddenMessage[i]
-  } 
-}
+//     // Guarda elemento seleccionado en la variable
+//     hiddenMessageSelected = hiddenMessage[i]
+//   } 
+// }
 
-// Si es el primer click al id y su clase es igual a id + message,
-// que se muestre el mensaje 
-messagesContainer.style.display = 'block'
-
-
-console.log(hiddenMessageSelected)
+// // Si es el primer click al id y su clase es igual a id + message,
+// // que se muestre el mensaje 
+// messagesContainer.style.display = 'block'
 
 
+// console.log(hiddenMessageSelected)
 
+// }
 
+// coffeeBtn.addEventListener("click", showHiddeMessage);
+// runningBtn.addEventListener("click", showHiddeMessage);
+// codeDesignBtn.addEventListener("click", showHiddeMessage);
+// figmaDesignBtn.addEventListener("click", showHiddeMessage);
+// gamesBtn.addEventListener("click", showHiddeMessage);
 
- // obtener los textos ocultos
-//  myArrayHiddenText
-
-//  if(getId == "coffee") {
-//     // mostrar contenedor azul de mensaje
-//     messages.style.display = 'flex'
-//     myArrayHiddenText[0].style.display = 'block';
-//     // hiddenMessage[1].style.display = 'none';
-//     // hiddenMessage[2].style.display = 'none';
-//     // hiddenMessage[3].style.display = 'none';
-//     // hiddenMessage[4].style.display = 'none';
-
-//   }
- 
- 
- 
- 
- 
- // let shownMessage = hiddenMessage.filter((msg) => msg == getId + 'Message')
-  // alert(shownMessage + 'prueba')
-
-  // numOfClicks++;
-  // if (numOfClicks > 2) {
-  //   numOfClicks = 0;
-  // }
-
-
-  // alert(hiddenMessage[0])
-   // Muestra el mensaje correspondiente al botón clicado
-  //  let currentMessage = document.getElementById(getId + 'Message');
-  //  currentMessage.style.display = 'block';
-
-
-  // let shownMessage = Array.hiddenMessage.filter((msg) => msg == getId + 'Message')
-  // alert(shownMessage + 'prueba')
-////////////////////////////////////////////////////////////////////////
-
-  // if(getId == "coffee") {
- 
-  //   messages.style.display = 'flex'
-  //   hiddenMessage[0].style.display = 'block';
-  //   hiddenMessage[1].style.display = 'none';
-  //   hiddenMessage[2].style.display = 'none';
-  //   hiddenMessage[3].style.display = 'none';
-  //   hiddenMessage[4].style.display = 'none';
-
-  // } else if (getId == "running") {
-  //   messages.style.display = 'flex'
-  //   hiddenMessage[0].style.display = 'none';
-  //   hiddenMessage[1].style.display = 'block';
-  //   hiddenMessage[2].style.display = 'none';
-  //   hiddenMessage[3].style.display = 'none';
-  //   hiddenMessage[4].style.display = 'none';
-
-  // } else if (getId == "codeDesign") {
-  //   messages.style.display = 'flex'
-  //   hiddenMessage[0].style.display = 'none';
-  //   hiddenMessage[1].style.display = 'none';
-  //   hiddenMessage[2].style.display = 'block';
-  //   hiddenMessage[3].style.display = 'none';
-  //   hiddenMessage[4].style.display = 'none';
-
-  // } else if (getId == "figmaDesign") {
-  //   messages.style.display = 'flex'
-  //   hiddenMessage[0].style.display = 'none';
-  //   hiddenMessage[1].style.display = 'none';
-  //   hiddenMessage[2].style.display = 'none';
-  //   hiddenMessage[3].style.display = 'block';
-  //   hiddenMessage[4].style.display = 'none';
-
-  // } else if (getId == "games") {
-  //   messages.style.display = 'flex'
-  //   hiddenMessage[0].style.display = 'none';
-  //   hiddenMessage[1].style.display = 'none';
-  //   hiddenMessage[2].style.display = 'none';
-  //   hiddenMessage[3].style.display = 'none';
-  //   hiddenMessage[4].style.display = 'block';
-  // }
-}
-
-coffeeBtn.addEventListener("click", showHiddeMessage);
-runningBtn.addEventListener("click", showHiddeMessage);
-codeDesignBtn.addEventListener("click", showHiddeMessage);
-figmaDesignBtn.addEventListener("click", showHiddeMessage);
-gamesBtn.addEventListener("click", showHiddeMessage);
-
-window.addEventListener('resize', showHiddeMessage);
+// window.addEventListener('resize', showHiddeMessage);
