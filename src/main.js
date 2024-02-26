@@ -113,7 +113,7 @@ let dribbleHover = false;
 let codepenHover = false;
 let linkedinHover = false;
 let resumeHover = false;
-let emailHover = false;
+// let emailHover = false;
 
 
 // hover
@@ -245,22 +245,22 @@ resume.addEventListener("mouseleave", () => {
 
 // email ////////////////////////////////////
 
-// cursor sale del elemento
-email.addEventListener("mouseover", () => {
-  // cambia variable a true
-  emailHover = true;
-  // llama la función
-  changeMenuIconsColor();
-});
+// // cursor sale del elemento
+// email.addEventListener("mouseover", () => {
+//   // cambia variable a true
+//   emailHover = true;
+//   // llama la función
+//   changeMenuIconsColor();
+// });
 
-// cursor sale del elemento
-email.addEventListener("mouseleave", () => {
-  // cambia variable a false
-  emailHover = false;
-  // llama la función
-  changeMenuIconsColor();
+// // cursor sale del elemento
+// email.addEventListener("mouseleave", () => {
+//   // cambia variable a false
+//   emailHover = false;
+//   // llama la función
+//   changeMenuIconsColor();
   
-});
+// });
 
 
 // función para cambiar color de iconos 
@@ -290,14 +290,14 @@ function changeMenuIconsColor() {
 
   // email 
 
-  if(emailHover === true) {
-    email.style.backgroundImage='url(../assets/email-blue.svg)';
+  // if(emailHover === true) {
+  //   email.style.backgroundImage='url(../assets/email-blue.svg)';
 
-  } else {
-    // regresar a los estilos del principio
-    email.removeAttribute('style');
+  // } else {
+  //   // regresar a los estilos del principio
+  //   email.removeAttribute('style');
    
-  }
+  // }
 
 }
 
