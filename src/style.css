@@ -456,7 +456,7 @@ hr {
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: 92%;
-  background-image: url(../assets/dribble02.png);
+  background-image: url("../assets/dribble02.png");
   background-position-y: 71%;
 }
 
@@ -468,7 +468,7 @@ hr {
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
-  background-image: url(../assets/dribble03.png);
+  background-image: url("../assets/dribble03.png");
   background-position-y: 0%;
 }
 
@@ -483,7 +483,7 @@ hr {
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: 51%;
-  background-image: url(../assets/codepen01.png);
+  background-image: url("../assets/codepen01.png");
   background-position-y: 7%;
 
 }
@@ -497,7 +497,7 @@ hr {
   background-repeat: no-repeat;
 
   background-position-x: 34%;
-  background-image: url(../assets/codepen02.png);
+  background-image: url("../assets/codepen02.png");
   background-position-y: 1%;
 }
 
@@ -509,7 +509,7 @@ hr {
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: 50%;
-  background-image: url(../assets/codepen03.png);
+  background-image: url("../assets/codepen03.png");
   background-position-y: 1%;
 }
 
@@ -593,7 +593,7 @@ hr {
   color: white;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(../assets/arrow-tr-circle.png);
+  background-image: url("../assets/arrow-tr-circle.png");
 }
 
 
@@ -673,12 +673,12 @@ hr {
 }
 
 .casos_de_estudio-section .container-img:nth-child(1) {
-  background: url("/assets/taxiSonrisas-caso.png");
+  background: url("../assets/taxiSonrisas-caso.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .casos_de_estudio-section .container-img:nth-child(2) {
-  background: url("/assets/menuClub-caso.png");
+  background: url("../assets/menuClub-caso.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
