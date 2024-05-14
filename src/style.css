@@ -670,7 +670,15 @@ hr {
   height: 280px;
   border-radius: 28px;
   padding: 16px;
-  background: url("https://pierinamont.github.io/hosted-assets/ilias-chebbi-2gpfqhEFVZ8-unsplash.jpg");
+}
+
+.casos_de_estudio-section .container-img:nth-child(1) {
+  background: url("/assets/taxiSonrisas-caso.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.casos_de_estudio-section .container-img:nth-child(2) {
+  background: url("/assets/menuClub-caso.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
